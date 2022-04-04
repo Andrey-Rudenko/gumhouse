@@ -4,7 +4,7 @@ body {
     color: #10637D;
 }
 .cont {
-    max-width: 1200px;
+    max-width: 1100px;
     margin-left: auto;
     margin-right: auto;
     width: 90%;
@@ -44,7 +44,7 @@ body {
     height: 0px;
     left: 527px;
     top: 320px;
-    border: 2px solid #C878B6;
+    border: 2px solid #36A5C9;
     border-radius: 30px;
     margin-top: 3px;
     margin-bottom: 3px;
@@ -71,9 +71,118 @@ body {
     margin-top: 100px;
 }
 
-@media screen and (max-width: 767px) { 
+.harm h2 {
+    text-align: center;
+}
+
+ .harmwave1 img, .harmwave2 img{
+     width: 100%;
+ }
+ .mainharm {
+     background-color: #F5ECF5;
+ }
+ .harm h2 {
+     margin: 0;
+ }
+ .harmwave1 img{
+     position: relative;
+     top:4px;
+ }
+.winandlist {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+}
+#win {
+    width: 50%;
+}
+
+.windowstripe-blue {
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid #8D8D8D;
+    border-radius: 8px;
+    padding-bottom: 10px;
+    background-color: #DBFDFF;
+}
+.windowimg-blue {
+    padding: 15px;
+    border: 2px solid #8D8D8D;
+    background-color: #DBFDFF;
+}
+.windowimg-blue img {
+    width: 100%;
+}
+.stripe-blue {
+    width: 100px;
+    height: 0px;
+    left: 527px;
+    top: 320px;
+    border: 2px solid #C878B6;
+    border-radius: 30px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+
+
+ .prevent {
+    text-align: center;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+ }
+ .footerwave {
+     width: 100%;
+     position: relative;
+     top: 4px;
+ }
+ .fefulogo {
+     height: 100px;
+     margin-bottom: 40px;
+ }
+ .blockfooter {
+     background-color: #DBFDFF;
+ }
+ #footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+ }
+ .footerlist {
+    list-style-type: none;
+ }
+ @media screen and (max-width:1100px) {
+    .winandlist {
+        display: block;
+    }
+    #win {
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+    }
+
+ }
+ @media screen and (max-width: 767px) { 
+    #win {
+        width: 80%;
+    }
     .help h1 {
         text-align: center;
         margin-top: 20px;
+    }
+    .prevent {
+        width: 100%;
+    }
+    #footer {
+        display: block;
+        text-align: center;
+    }
+    #footer ul {
+        margin: 0;
+        padding-bottom: 30px;
+    }
+    #footer img {
+        padding-bottom: 30px;
     }
  }
