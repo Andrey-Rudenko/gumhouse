@@ -112,6 +112,7 @@ body {
 }
 .windowimg-blue img {
     width: 100%;
+    border: 2px solid #8D8D8D;
 }
 .stripe-blue {
     width: 100px;
