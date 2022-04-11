@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/icon.ico" type="image/x-icon">
+    <title>gum house</title>
+    <style>
+        .body_hide {
+            opacity: 0;
+            transition: .9s opacity ease-in-out;
+        }
+
+        .body_visible {
+            opacity: 1;
+        }
+
+        body {
+            background-color: #DBFDFF;
+            margin: 0;
+        }
+
+        .animated-button {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 150px;
+            text-align: center;
+            text-decoration: none;
+            padding: 25px 30px;
+            border: 2px solid;
+            border-bottom-width: 4px;
+            border-radius: 10px;
+            font-family: 'Montserrat', sans-serif;
+            text-transform: uppercase;
+            font-weight: 800;
+            letter-spacing: 2px;
+
+            animation: stripes .9s infinite linear;
+            background: linear-gradient(45deg, rgba(30, 255, 188, 1) 25%, rgba(255, 255, 255, 1) 25%, rgba(255, 255, 255, 1) 50%, rgba(30, 255, 188, 1) 50%, rgba(30, 255, 188, 1) 75%, rgba(255, 255, 255, 1) 75%, rgba(255, 255, 255, 1));
+            background-size: 10px 10px;
+            color: #FF50E5;
+            margin-top: 30px;
+            margin-bottom: 25px;
+        }
+
+        @keyframes stripes {
+            0% {
+                background-position: 0 0;
+            }
+
+            100% {
+                background-position: 50px 0;
+            }
+        }
+
+        iframe {
+            width: 100%;
+            height: 730px;
+        }
+
+        @media screen and (max-width:450px) {
+            iframe {
+                height: 820px;
+            }
+        }
+    </style>
+    <script>
+        setTimeout(function () {
+            document.body.classList.add('body_visible');
+        }, 200);
+    </script>
+</head>
+
+<body class="body_hide">
+    <a href="page.html" class="animated-button">Подробнее о проекте</a>
+    <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLScThACAjIiSySAq66dRFAF3uctCb6t3qN6UvpMcBo7zbQJNFQ/viewform?embedded=true"
+        width="640" height="657" frameborder="0" marginheight="0" marginwidth="0">Загрузка…</iframe>
+</body>
+
+</html>
